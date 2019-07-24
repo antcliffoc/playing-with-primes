@@ -1,6 +1,6 @@
 
-def prime_generator(num)
-  numbers = (3..num).to_a
+def prime_generator
+  numbers = (3..1000).to_a
   primes = [2,]
   numbers.each {|x|
     is_prime = true
@@ -15,4 +15,4 @@ def prime_generator(num)
   return primes
 end
 
-puts prime_generator(10000)
+puts prime_generator
