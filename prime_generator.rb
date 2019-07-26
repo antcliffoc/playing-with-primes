@@ -7,6 +7,7 @@ def prime_generator(num)
     primes.each {|y|
       if x%y == 0
       is_prime = false
+      break
       end}
     if is_prime == true
     primes.push(x)
@@ -15,4 +16,4 @@ def prime_generator(num)
   return primes
 end
 
-puts prime_generator(10000)
+puts prime_generator(100000)
