@@ -19,5 +19,6 @@ number = gets.chomp.to_i
 puts "There are #{prime_generator(number).length} Prime numbers between 1 & #{number}"
 puts "The largest prime in this range is #{prime_generator(number)[-1]}"
 puts "show all the primes in this range? Y/N ?"
-user_response = gets.upcase!.chomp
+user_response = gets.chomp
+user_response.upcase!
 puts prime_generator(number) if user_response == "Y"
